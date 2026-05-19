@@ -8,6 +8,22 @@
   --radius: 20px;
 }
 
+@media (prefers-color-scheme: dark) {
+  :root {
+  --primaria: #EF88AD;
+  --secundaria: #A53860;
+  --escuro: #3A0519;
+  --claro: #670D2F;
+  --texto: #3A0519;
+  --sombra: 0 8px 30px rgba(0, 0, 0, 0.6);
+  --radius: 20px;
+  }
+
+}
+
+  
+
+
 * {
   margin: 0;
   padding: 0;
@@ -43,7 +59,9 @@ header {
   backdrop-filter: blur(20px);
   box-shadow: 0 2px 20px rgba(0, 0, 0, 0.8);
 }
-.logo {
+
+.header img{
+  height:;
 }
 
 nav {
@@ -78,7 +96,7 @@ nav a:hover {
 
   background:
     linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
-    url("../img/banner.png");
+    url("../img/novalogo.jpeg");
 
   background-size: cover;
   background-position: center;
@@ -194,9 +212,9 @@ nav a:hover {
 /* PRODUTOS */
 .produtos {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   flex-wrap: wrap;
-  gap: 35px;
+  gap: 12px;
 }
 
 .produtos {
@@ -326,8 +344,37 @@ iframe {
 } 
   @media (min-width: 768px) and (max-width:1200px){   
 }
+/*Quem Somos */
+#quemSomos {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 10px;
+}
 
-.produtos{
-  
+#quemSomos h1{
+  margin-top: 70px;
+  color:#CA6180
+}
+
+#quemSomos p {
+  margin-top: 200px;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: var(--radius);
+  box-shadow: var(--sombra);
+  padding: 50px;
+  width: 60%;
+  position: absolute;
+  justify-content: center;
+}
+
+#quemSomos img {
+  margin-top: 20%;
+  width: 600px;
+  border-radius: var(--radius);
+  box-shadow: var(--sombra);
+  transition: 0.4s;
+  position: absolute;
+  height: 400px;
 }
 
