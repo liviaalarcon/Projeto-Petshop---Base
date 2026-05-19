@@ -196,7 +196,7 @@ nav a:hover {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  gap: 12px;
+  gap: 35px;
 }
 
 .produtos {
@@ -330,6 +330,4 @@ iframe {
 .produtos{
   
 }
-
-
 
